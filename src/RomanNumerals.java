@@ -10,12 +10,15 @@ public class RomanNumerals {
 					convertedNumber = convertedNumber + 1;
 				if (parts[i].equals("V")){
 					convertedNumber = 5;
-					if (parts.length > 1 && parts[i-1].equals("I"))
+					if (romanNum.length() > 1 && parts[i-1].equals("I"){
 						convertedNumber = convertedNumber - 1;
-					else if (parts.length > 1 && parts[i-1].equals("I") == false)
+					}
+					else if (romanNum.length() > 1 && parts[i+1].equals("I")){
 						convertedNumber = convertedNumber + 1;
+						break;
+					}
 				}
-
+				
 				if (parts[i].equals("X"))
 					convertedNumber = convertedNumber + 10;
 		}
