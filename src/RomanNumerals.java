@@ -10,7 +10,7 @@ public class RomanNumerals {
 					convertedNumber = convertedNumber + 1;
 				if (parts[i].equals("V")){
 					convertedNumber = 5;
-					if (romanNum.length() > 1 && parts[i-1].equals("I"){
+					if (romanNum.length() > 1 && parts[i-1].equals("I")){
 						convertedNumber = convertedNumber - 1;
 					}
 					else if (romanNum.length() > 1 && parts[i+1].equals("I")){
